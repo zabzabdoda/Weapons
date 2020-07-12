@@ -641,7 +641,6 @@ public class Weapons extends JavaPlugin implements Listener {
 			public void run() {
 
 				if (as.getCustomName().contains("Boom") || timer == 0) {
-					//System.out.print(ChatColor.RED + "Explode");
 					as.getWorld().spawnParticle(Particle.EXPLOSION_HUGE, as.getLocation(), 100, 15, 5, 15);
 					as.getWorld().playSound(as.getLocation(), Sound.ENTITY_GENERIC_EXPLODE, 100, 0.5f);
 					as.getWorld().playSound(as.getLocation(), Sound.ENTITY_GENERIC_EXPLODE, 100, 1f);
@@ -663,7 +662,6 @@ public class Weapons extends JavaPlugin implements Listener {
 					cancel();
 
 				} else if (as.getCustomName().contains("Disarmed")) {
-				//	System.out.print(ChatColor.BLUE + "Disarmed");
 					c4List.remove(as);
 					as.remove();
 					cancel();
@@ -686,10 +684,6 @@ public class Weapons extends JavaPlugin implements Listener {
 
 		if (e.getItemDrop().getItemStack().equals(C4)) {
 			e.getItemDrop().setPickupDelay(50);
-			// Location loc =
-			// e.getPlayer().getWorld().getBlockAt(e.getPlayer().getLocation()).getLocation();
-			// Location loc2 = new
-			// Location(loc.getWorld(),loc.getX()+0.5,loc.getY()-1.5,loc.getZ()+0.5);
 			new BukkitRunnable() {
 				@Override
 				public void run() {
