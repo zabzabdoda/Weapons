@@ -3,10 +3,10 @@ main: me.zabzabdoda.Weapons.Weapons
 version: 1.0
 api-version: 1.14
 author: zabzabdoda
-description: Loot Locations plugin
+description: Adds weapons for TTT plugin
 commands:
   weapon:
-    description: Main command for BananaUHC.
+    description: Main command for Weapons.
     usage: |
            /weapon <give|list|help>
-           Example: /weapon wand - Give you the wand to generate loot.
+           Example: /weapon give m16 - Gives you an m16 weapon.
